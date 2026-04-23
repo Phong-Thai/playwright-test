@@ -27,6 +27,6 @@ test("Verify Playwright Locator", async ({ page }) => {
 
     await expect(logo).toBeVisible();
 
-
+    await expect(logo).toHaveAttribute("src", "https://demo.nopcommerce.com/images/logo.png");
 
 })
